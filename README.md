@@ -24,3 +24,11 @@ First, it is necessary to define the concepts of **Onion Routing** and **Mixnets
 ![MixNets representation](https://upload.wikimedia.org/wikipedia/commons/4/4f/Red_de_mezcla.png)
 
 One of the problems found in MixNet is that the receiver is not anonymous, and if one of the servers is malicious, the anonymity of the sender is also compromised. To solve this, the Riffle protocol was developed.
+
+Riffle consists of a small set of anonymous servers and a large number of users. It guarantees anonymity to all non-malicious users as long as there is at least one non-malicious server. The project uses a hybrid shuffling and a private receiving of information to achieve computational and bandwidth efficiency.
+The **hybrid shuffling**  is used to prevent any alteration of messages by a malicious user or server. It works by having each server in the suite create mathematical proofs that the messages sent were handled in the expected way, not being altered according to a malicious agent. However, this process slows down the network due to heavy message traffic. For this, the authentication encryption technique is used.
+
+An **encryption authentication** can verify the authenticity of an encrypted message, however, even being more efficient than the hybrid shuffle, it needs both the sender and the recipient to share a private encryption key.
+
+![Anonymous File Sharing Protocol](https://uploads-ssl.webflow.com/61430f2787cc952cb53eec26/61430f2787cc95301a3eed75_Fig-2.-Anonymous-File-Sharing-Protocol.png)
+
